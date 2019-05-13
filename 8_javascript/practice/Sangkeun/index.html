@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
     <div class="navbar-wrapper">
@@ -22,7 +22,14 @@
               Sangkeun Kim
             </p>
             <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ipsum elit. Sed at fermentum purus. Mauris at magna placerat, porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec eleifend lacus vel eros sagittis facilisis. Praesent at porttitor erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit. Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem viverra sit amet. Praesent dapibus eleifend nisl non consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+              ipsum elit. Sed at fermentum purus. Mauris at magna placerat,
+              porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean
+              ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec
+              eleifend lacus vel eros sagittis facilisis. Praesent at porttitor
+              erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit.
+              Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem
+              viverra sit amet. Praesent dapibus eleifend nisl non consequat.
             </p>
           </div>
           <div class="article">
@@ -33,7 +40,14 @@
               Sangkeun Kim
             </p>
             <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ipsum elit. Sed at fermentum purus. Mauris at magna placerat, porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec eleifend lacus vel eros sagittis facilisis. Praesent at porttitor erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit. Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem viverra sit amet. Praesent dapibus eleifend nisl non consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+              ipsum elit. Sed at fermentum purus. Mauris at magna placerat,
+              porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean
+              ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec
+              eleifend lacus vel eros sagittis facilisis. Praesent at porttitor
+              erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit.
+              Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem
+              viverra sit amet. Praesent dapibus eleifend nisl non consequat.
             </p>
           </div>
           <div class="article">
@@ -44,7 +58,14 @@
               Sangkeun Kim
             </p>
             <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ipsum elit. Sed at fermentum purus. Mauris at magna placerat, porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec eleifend lacus vel eros sagittis facilisis. Praesent at porttitor erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit. Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem viverra sit amet. Praesent dapibus eleifend nisl non consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+              ipsum elit. Sed at fermentum purus. Mauris at magna placerat,
+              porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean
+              ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec
+              eleifend lacus vel eros sagittis facilisis. Praesent at porttitor
+              erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit.
+              Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem
+              viverra sit amet. Praesent dapibus eleifend nisl non consequat.
             </p>
           </div>
           <div class="article">
@@ -55,7 +76,14 @@
               Sangkeun Kim
             </p>
             <p class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ipsum elit. Sed at fermentum purus. Mauris at magna placerat, porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec eleifend lacus vel eros sagittis facilisis. Praesent at porttitor erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit. Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem viverra sit amet. Praesent dapibus eleifend nisl non consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+              ipsum elit. Sed at fermentum purus. Mauris at magna placerat,
+              porttitor augue at, dictum sem. Donec sodales neque nisl. Aenean
+              ipsum ipsum, euismod a turpis id, imperdiet luctus elit. Donec
+              eleifend lacus vel eros sagittis facilisis. Praesent at porttitor
+              erat. Nulla facilisi. Aenean et hendrerit nisi, ac egestas elit.
+              Suspendisse ultricies scelerisque ipsum, vestibulum cursus sem
+              viverra sit amet. Praesent dapibus eleifend nisl non consequat.
             </p>
           </div>
         </div>
@@ -63,6 +91,19 @@
     </div>
   </body>
   <script>
+    const logoElement = document.getElementById("logo");
+    logoElement.addEventListener("click", f);
+
+    const f = e => {
+      console.log(e);
+      alert("You clicked the logo");
+      if (confirm("If you click ok button, then this page will be refreshed")) {
+        window.location.reload();
+      } else {
+        alert("You clicked no! button :)");
+      }
+    };
+
     /*
     const logoElement = document.getElementById('logo');
     const f = (e) => {
@@ -116,7 +157,7 @@
     function f(a, b, c) {
       a = a + 1;
       b.push(5);
-      c['test'] = "T_T";
+      c["test"] = "T_T";
     }
     let _a = 5;
     let b = [4, 3];
@@ -127,8 +168,8 @@
     const ff = (a, b, c) => {
       a = a + 1;
       b.push(5);
-      c['test'] = "T_T";
-    }
+      c["test"] = "T_T";
+    };
     let _A = 5;
     let B = [4, 3];
     let C = {};
@@ -140,12 +181,12 @@
         console.log("This is constructor");
       }
       color() {
-        return 'Red or white or Sparkling';
+        return "Red or white or Sparkling";
       }
     }
     class RedWine extends Wine {
       color() {
-        return 'Red';
+        return "Red";
       }
     }
     wine = new Wine();
@@ -160,4 +201,3 @@
      */
   </script>
 </html>
-
